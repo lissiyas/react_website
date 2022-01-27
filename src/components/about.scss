@@ -1,0 +1,26 @@
+.about {
+  background-color: white;
+  color: black;
+
+  .hello {
+    color: black;
+    transition: transform 1s;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: yellowgreen;
+  }
+}
+
+.about:hover .hello {
+  color: yellow;
+  transform: translateX(20px);
+}
